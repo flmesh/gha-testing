@@ -27,6 +27,9 @@ jobs:
     name: Deploy Terraform Infrastructure as Code
     runs-on: ubuntu-latest
 
+    env:
+      TF_IN_AUTOMATION: true
+
     defaults:
       run:
         working-directory: terraform/
